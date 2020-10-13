@@ -10,10 +10,31 @@ namespace MG_WebCalc_SE256
     public partial class _Default : Page
     {
         public Double dblNum1;
+        public Boolean numInMemory;
+        public string operandVar;
+
+        protected void checkMem(string operation)
+        {
+            if (numInMemory == true)
+            {
+                memIndicator.InnerText = "M";
+                operandIndicator.InnerText = operation;
+
+            }
+            else
+            {
+                memIndicator.InnerText = "";
+                operandIndicator.InnerText = "";
+            }
+        }
+
         protected void Page_Load(object sender, EventArgs e)
         {
 
         }
+
+
+ 
 
         protected void NumButtons_Click(object sender, EventArgs e)
         {
@@ -49,13 +70,18 @@ namespace MG_WebCalc_SE256
             }
 
             txtLCD.Text = Result.ToString();
+
+            numInMemory = false;
         }
         protected void btnPlus_Click(object sender, EventArgs e)
         {
             Session["Num1"] = txtLCD.Text;
             dblNum1 = Int32.Parse(txtLCD.Text);
             Session["Operand"] = "+";
-            txtLCD.Text += "+";
+            operandVar = Session["Operand"].ToString();
+            txtLCD.Text = "";
+            numInMemory = true;
+            checkMem(operandVar);
         }
 
         protected void btnMinus_Click(object sender, EventArgs e)
@@ -63,21 +89,41 @@ namespace MG_WebCalc_SE256
             Session["Num1"] = txtLCD.Text;
             dblNum1 = Int32.Parse(txtLCD.Text);
             Session["Operand"] = "-";
-            txtLCD.Text += "-";
+            operandVar = Session["Operand"].ToString();
+            txtLCD.Text = "-";
+            numInMemory = true;
+            checkMem(operandVar);
         }
         protected void btnMultiply_Click(object sender, EventArgs e)
         {
             Session["Num1"] = txtLCD.Text;
             dblNum1 = Int32.Parse(txtLCD.Text);
             Session["Operand"] = "*";
-            txtLCD.Text += "*";
+            operandVar = Session["Operand"].ToString();
+            txtLCD.Text = "";
+            numInMemory = true;
+            checkMem(operandVar);
         }
         protected void btnDivide_Click(object sender, EventArgs e)
         {
             Session["Num1"] = txtLCD.Text;
             dblNum1 = Double.Parse(txtLCD.Text);
             Session["Operand"] = "/";
-            txtLCD.Text += "/";
+            operandVar = Session["Operand"].ToString();
+            txtLCD.Text = "";
+            numInMemory = true;
+            checkMem(operandVar);
+
+        }
+
+        protected void btnClear_Click(object sender, EventArgs e)
+        {
+            Session["Num1"] = null;
+            Session["Operand"] = null;
+            txtLCD.Text = "";
+            numInMemory = false;
+            memIndicator.InnerText = "";
+            operandIndicator.InnerText = "";
         }
     }
 }

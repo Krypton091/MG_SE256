@@ -24,6 +24,24 @@ namespace MG_WebCalc_SE256
         protected global::System.Web.UI.WebControls.TextBox txtLCD;
 
         /// <summary>
+        /// operandIndicator control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlTableCell operandIndicator;
+
+        /// <summary>
+        /// memIndicator control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlTableCell memIndicator;
+
+        /// <summary>
         /// btn0 control.
         /// </summary>
         /// <remarks>
@@ -202,5 +220,14 @@ namespace MG_WebCalc_SE256
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btnEquals;
+
+        /// <summary>
+        /// btnClear control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnClear;
     }
 }

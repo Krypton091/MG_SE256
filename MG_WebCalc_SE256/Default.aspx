@@ -8,6 +8,13 @@
             <tr>
                 <td colspan="4">
                     <asp:TextBox ID="txtLCD" runat="server" Columns="20" />
+                    
+                </td>
+                <td runat="server" id="operandIndicator">
+                    <p></p>
+                </td>
+                <td runat="server" id="memIndicator">
+                    <p></p>
                 </td>
             </tr>
 
@@ -50,6 +57,7 @@
                 <td><asp:Button ID="Button2" Text="  " runat="server"/></td>
                 <td><asp:Button ID="Button3" Text="  " runat="server"/></td>
                 <td><asp:Button ID="btnEquals" Text="=" runat="server" OnClick="btnEquals_Click"/></td>
+                <td><asp:Button ID="btnClear" Text="C" runat="server" OnClick="btnClear_Click"/></td>
             </tr>
         </table>
     </div>
