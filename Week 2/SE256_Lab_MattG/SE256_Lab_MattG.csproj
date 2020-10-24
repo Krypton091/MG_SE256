@@ -108,6 +108,7 @@
     <Content Include="About.aspx" />
     <Content Include="Backend\ControlPanel.aspx" />
     <Content Include="Backend\Default.aspx" />
+    <Content Include="Backend\HMDMgr.aspx" />
     <Content Include="Images\vrcomparison.png" />
     <Content Include="VRInfo.aspx" />
     <Content Include="Contact.aspx" />
@@ -164,6 +165,9 @@
     <Content Include="Site.Mobile.Master" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="App_Code\VirtualReality.cs" />
+    <Compile Include="App_Code\VirtualRealityV2.cs" />
+    <Compile Include="App_Code\ValidationLibrary.cs" />
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="About.aspx.cs">
       <DependentUpon>About.aspx</DependentUpon>
@@ -186,6 +190,13 @@
     </Compile>
     <Compile Include="Backend\Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Backend\HMDMgr.aspx.cs">
+      <DependentUpon>HMDMgr.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Backend\HMDMgr.aspx.designer.cs">
+      <DependentUpon>HMDMgr.aspx</DependentUpon>
     </Compile>
     <Compile Include="VRInfo.aspx.cs">
       <DependentUpon>VRInfo.aspx</DependentUpon>

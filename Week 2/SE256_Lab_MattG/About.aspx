@@ -2,6 +2,6 @@
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     <h2><%: Title %>.</h2>
-    <h3>Your application description page.</h3>
-    <p>Use this area to provide additional information.</p>
+    <h3>Virtual Reality Info</h3>
+    <p>This site will provide information on the latest and greatest Virtual Reality headsets, also known as HMDs.</p>
 </asp:Content>

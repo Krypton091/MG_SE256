@@ -10,14 +10,13 @@
     <h2><%: Title %>.</h2>
     <h3>Your contact page.</h3>
     <address>
-        One Microsoft Way<br />
-        Redmond, WA 98052-6399<br />
+        40 Juniper Lane<br />
+        Griswold, CT 06351<br />
         <abbr title="Phone">P:</abbr>
-        425.555.0100
+        860-710-0849
     </address>
 
     <address>
-        <strong>Support:</strong>   <a href="mailto:Support@example.com">Support@example.com</a><br />
-        <strong>Marketing:</strong> <a href="mailto:Marketing@example.com">Marketing@example.com</a>
+        <strong>Support:</strong>   <a href="mailto:mgray@email.neit.edu">mgray@email.neit.edu</a>
     </address>
 </asp:Content>

@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace SE256_Lab_MattG.Backend
+namespace SE256_Activity_MattG.Backend
 {
     public partial class ControlPanel : System.Web.UI.Page
     {

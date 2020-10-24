@@ -9,7 +9,7 @@
 
         <table>
             <tr>
-                <td><a href="EBookMgr.aspx" runat="server">Add an Ebook</a></td>
+                <td><a href="HMDMgr.aspx" runat="server">Add an HMD (Head Mounted Display)</a></td>
             </tr>
             <tr>
                 <!--Let user logout from program-->
