@@ -1,0 +1,67 @@
+﻿@page
+@model SE256_RazorLab_MattG.Pages.AddMonitorModel
+@{
+    ViewData["Title"] = "AddMonitor";
+}
+
+<h1>AddMonitor</h1>
+
+<form method="post">
+
+    <div class="form-group">
+        <label asp-for="mMonitor.Monitor_Name"></label>
+        <input asp-for="mMonitor.Monitor_Name" type="text" class="form-control" placeholder="Name of monitor" />
+        <span asp-validation-for="mMonitor.Monitor_Name" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="mMonitor.Monitor_Price"></label>
+        <input asp-for="mMonitor.Monitor_Price" type="text" class="form-control" placeholder="Price of monitor" />
+        <span asp-validation-for="mMonitor.Monitor_Price" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="mMonitor.Monitor_RefreshRate"></label>
+        <input asp-for="mMonitor.Monitor_RefreshRate" type="text" class="form-control" placeholder="Refresh rate e.g 60Hz" />
+        <span asp-validation-for="mMonitor.Monitor_RefreshRate" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="mMonitor.Monitor_Panel"></label>
+        <input asp-for="mMonitor.Monitor_Panel" type="text" class="form-control" placeholder="Monitor panel e.g TN/IPS" />
+        <span asp-validation-for="mMonitor.Monitor_Panel" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="mMonitor.Monitor_Brand"></label>
+        <input asp-for="mMonitor.Monitor_Brand" type="text" class="form-control" placeholder="Monitor manufacturer" />
+        <span asp-validation-for="mMonitor.Monitor_Brand" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="mMonitor.Monitor_Size"></label>
+        <input asp-for="mMonitor.Monitor_Size" type="text" class="form-control" placeholder="Monitor size in inches eg. 24" />
+        <span asp-validation-for="mMonitor.Monitor_Size" class="text-danger"></span>
+    </div>
+
+    @*
+        <input type="text" asp-for="mMonitor.Monitor_Price" placeholder="Price of monitor" />
+        <input type="text" asp-for="mMonitor.Monitor_RefreshRate" placeholder="Refresh rate e.g 60Hz" />
+        <input type="text" asp-for="mMonitor.Monitor_Panel" placeholder="Monitor panel e.g TN/IPS" />
+        <input type="text" asp-for="mMonitor.Monitor_Brand" placeholder="Monitor manufacturer" />
+        <input type="text" asp-for="mMonitor.Monitor_Size" placeholder="Monitor size in inches eg. 24" />
+    *@
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+<script src="/lib/jquery/dist/jquery.min.js"></script>
+<script src="/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+<script src="/lib/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.min.js"></script>
+@{ 
+    if (Model.mMonitor is null == false)
+    {
+    <h1>Results</h1>
+    <p>@Model.mMonitor.Monitor_Name</p>
+    }
+}
