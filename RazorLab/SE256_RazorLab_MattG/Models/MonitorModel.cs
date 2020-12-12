@@ -30,6 +30,6 @@ namespace SE256_RazorLab_MattG.Models
         [Required]
         public String Monitor_Size { get; set; } //Size of monitor
 
-
+        public String Feedback { get; set; }
     }
 }
