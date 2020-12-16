@@ -90,7 +90,6 @@ namespace SE256_RazorFinal_MattG.Models
                         song.Song_Date = DateTime.Parse(rdr["Song_Date"].ToString());
                         //DateTime.Parse(rdr["Song_Date"].ToString());
                         song.Song_Owned = Convert.ToBoolean(Convert.ToInt16(rdr["Song_Owned"].ToString()));
-                        int test = 1 + 2;
                         song.Artist_Email = rdr["Artist_Email"].ToString();
                         song.Artist_Website = rdr["Artist_Website"].ToString();
 
@@ -135,7 +134,6 @@ namespace SE256_RazorFinal_MattG.Models
                         song.Song_PlayTime = rdr["Song_PlayTime"].ToString();
                         song.Song_Rating = Decimal.Parse(rdr["Song_Rating"].ToString());
                         song.Song_Date = DateTime.Parse(rdr["Song_Date"].ToString());
-                        //DateTime.Parse(rdr["Song_Date"].ToString());
                         song.Song_Owned = Convert.ToBoolean(Convert.ToInt16(rdr["Song_Owned"].ToString()));
                         song.Artist_Email = rdr["Artist_Email"].ToString();
                         song.Artist_Website = rdr["Artist_Website"].ToString();
