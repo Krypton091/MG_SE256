@@ -1,0 +1,9 @@
+C:\Users\slambert\Documents\NEIT\Courses\SE245\Examples\Payroll_Part\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe
+C:\Users\slambert\Documents\NEIT\Courses\SE245\Examples\Payroll_Part\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.pdb
+C:\Users\slambert\Documents\NEIT\Courses\SE245\Examples\Payroll_Part\WindowsFormsApplication1\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\slambert\Documents\NEIT\Courses\SE245\Examples\Payroll_Part\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.Form1.resources
+C:\Users\slambert\Documents\NEIT\Courses\SE245\Examples\Payroll_Part\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.Properties.Resources.resources
+C:\Users\slambert\Documents\NEIT\Courses\SE245\Examples\Payroll_Part\WindowsFormsApplication1\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\slambert\Documents\NEIT\Courses\SE245\Examples\Payroll_Part\WindowsFormsApplication1\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\slambert\Documents\NEIT\Courses\SE245\Examples\Payroll_Part\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.exe
+C:\Users\slambert\Documents\NEIT\Courses\SE245\Examples\Payroll_Part\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.pdb

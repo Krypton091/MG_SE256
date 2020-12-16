@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\krypt\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\krypt\\.nuget\\packages"
+    ]
+  }
+}

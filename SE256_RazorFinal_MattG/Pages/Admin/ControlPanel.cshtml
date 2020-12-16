@@ -1,0 +1,54 @@
+﻿@page
+@model SE256_RazorFinal_MattG.Pages.Admin.ControlPanelModel
+@{
+}
+
+<h1>Control Panel</h1>
+
+<div>
+    <table class="table table-bordered table-sm table-striped">
+
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Song Title</th>
+                <th>Song Artist</th>
+                <th>Song Playtime</th>
+                <th>Song Rating</th>
+                <th>Song Release Date</th>
+                <th>Song Owned</th>
+                <th>Artist Email</th>
+                <th>Artist Website</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            @if (Model == null)
+            {
+                <tr>
+                    <td colspan="7" class="text-center">No Model</td>
+                </tr>
+            }
+            else
+            {
+                @foreach (var p in Model.sngs)
+                {
+                <tr>
+                    <td>@p.Song_ID</td>
+                    <td>@p.Song_Title</td>
+                    <td>@p.Song_Artist</td>
+                    <td>@p.Song_PlayTime</td>
+                    <td>@p.Song_Rating</td>
+                    <td>@p.Song_Date</td>
+                    <td>@p.Song_Owned</td>
+                    <td>@p.Artist_Email</td>
+                    <td>@p.Artist_Website</td>
+
+                    <td><a asp-page="/Admin/EditSong" asp-route-id="@p.Song_ID">Edit</a></td>
+                    <td><a asp-page="/Admin/DeleteSong" asp-route-id="@p.Song_ID">Delete</a></td>
+                </tr>
+                }
+            }
+        </tbody>
+    </table>
+</div>

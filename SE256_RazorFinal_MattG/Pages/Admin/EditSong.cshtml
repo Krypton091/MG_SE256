@@ -1,0 +1,74 @@
+﻿@page
+@model SE256_RazorFinal_MattG.Pages.Admin.EditSongModel
+@{
+    ViewData["Title"] = "EditSong";
+}
+
+<h1>Edit Ticket</h1>
+
+<form method="post">
+
+    <div class="form-group">
+        <label asp-for="sSong.Song_Title">Song Title</label>
+        <input asp-for="sSong.Song_Title" type="text" class="form-control" placeholder="e.g Stairway to Heaven" />
+        <span asp-validation-for="sSong.Song_Title" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="sSong.Song_Artist">Song Artist</label>
+        <input asp-for="sSong.Song_Artist" type="text" class="form-control" placeholder="e.g Led Zeppelin" />
+        <span asp-validation-for="sSong.Song_Artist" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="sSong.Song_PlayTime">Song Length (M:SS)</label>
+        <input asp-for="sSong.Song_PlayTime" type="text" class="form-control" placeholder="e.g 10:57" />
+        <span asp-validation-for="sSong.Song_PlayTime" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="sSong.Song_Rating">Song Rating (1-5)</label>
+        <input asp-for="sSong.Song_Rating" type="text" class="form-control" placeholder="e.g 4 or 4.5" />
+        <span asp-validation-for="sSong.Song_Rating" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="sSong.Song_Date">Song Release Date</label>
+        <input asp-for="sSong.Song_Date" type="date" class="form-control" placeholder="Release date of song" />
+        <span asp-validation-for="sSong.Song_Date" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="sSong.Song_Owned">Do you own this song? (Check box if yes)</label>
+        <input asp-for="sSong.Song_Owned" type="checkbox" class="form-control" placeholder="Whether the song is owned or not" />
+        <span asp-validation-for="sSong.Song_Owned" class="text-danger"></span>
+    </div>
+
+
+    <div class="form-group">
+        <label asp-for="sSong.Artist_Email">Artist's Email</label>
+        <input asp-for="sSong.Artist_Email" type="text" class="form-control" placeholder="e.g ledzeppelin@rock.com" />
+        <span asp-validation-for="sSong.Artist_Email" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="sSong.Artist_Website">Artist's Website</label>
+        <input asp-for="sSong.Artist_Website" type="text" class="form-control" placeholder="e.g http://ledzeppelin.com/" />
+        <span asp-validation-for="sSong.Artist_Website" class="text-danger"></span>
+    </div>
+
+    <input asp-for="sSong.Song_ID" type="hidden" class="form-control" />
+
+    <button type="submit" class="btn btn-primary">Update</button>
+</form>
+
+<script src="/lib/jquery/dist/jquery.min.js"></script>
+<script src="/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+<script src="/lib/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.min.js"></script>
+@{
+    if (Model.sSong is null == false && Model.sSong.Feedback != null)
+    {
+        <h1>Results</h1>
+        <p>@Model.sSong.Feedback</p>
+    }
+}
